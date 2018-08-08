@@ -13,6 +13,6 @@ describe('<GuessList />', () => {
 	});
 
 	it('renders without crashing', () => {
-		shallow(<GuessList />);
+		shallow(<GuessList guesses={seedGuesses} />);
 	});
 });
