@@ -13,14 +13,6 @@ describe('<GuessList />', () => {
 	});
 
 	it('renders without crashing', () => {
-		// console.log(<GuessList />);
-		// { '$$typeof': Symbol(react.element),
-	  	//     type: [Function: GuessList],
-	  	//     key: null,
-	  	//     ref: null,
-	  	//     props: {},
-	  	//     _owner: null,
-	 	//     _store: {} }
 		shallow(<GuessList guesses={seedGuesses} />);
 	});
 
