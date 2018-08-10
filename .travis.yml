@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: E9UcuUvZRjltVyVqYiINsUYiCVI7reL0ipQdzp1KcEgDHad19C3/2BlY1Wk2HN4+6vHko2bHXnko5/2YD+4YaN37bKz1jEFVSaHDl+AxA2gzfgeW8iLBWOm3a8zRGlWlJsXS/5Xjxp0S5FUPOCME10MWb1mFtvQYLBTp9b0HYn6oLTQ0FKW6YbtpLPEITEVc/qMM/+NQF6o0NuMLxNMh0EmFSqTO3xdjfbAGEf/97H6TrInMpOwyl5apb9QxsHpWLawzbDe+g9ojoZHNKFlKNFZpvgOafFiwmBve4BGXHtTCGFG8kHcXUP9zqqrmfDbzCvxhugS6SK9Nv1U6utoo1IzUEx/iGkXmqUfjsZu9BDX9GPIVgXgwin9jUoWKLmAqkEVlsQW2NW6I39McdWizoz0oS8+6YMDz7uS9YrBuXsl1174rIVPV0MdaIpwrdsEP+Humk1nu2WU+ZOK9+fr266XfLMFlp7xjkCyuFFOTX83lsO7pPGesTABeczesBskBYV3IxuFJ5Q7vdhca0Zgu0+JeyhsV0O3VkEfLqxNyDH/8t0m3LE3f7gveuM5FJO0xEBIYZaJwZg+CGj+r5bx+mO4T+NFRKk9Km2vWXMf2V+r47GknYYkY+BxjOffkOfIwsBccywPdUucmBUtntf7816pcXRuvuFsotJGzsVYvrYU=
+  app: safe-badlands-72081
+  on:
+    repo: rosaxny/react-hot-cold-test
